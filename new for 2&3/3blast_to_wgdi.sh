@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# 遍历 Auto_pep 文件夹下的所有 _pep 文件夹
 for pep_folder in Auto_pep/*_pep/; do
-    # 获取物种名称（去掉 Auto_pep/ 和 _pep 后缀）
     species_name=${pep_folder#Auto_pep/}
     species_name=${species_name%_pep/}
 

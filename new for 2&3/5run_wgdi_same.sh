@@ -35,7 +35,7 @@ EOL
             # 生成 total.conf 文件
             cat > "$sub_folder/total.conf" <<EOL
 [dotplot]
-blast = $species_name.blast
+blast = ${species_name}_${species_name}.blast
 gff1 = $species_name.new.gff
 gff2 = $species_name.new.gff
 lens1 = $species_name.lens
@@ -55,7 +55,7 @@ figsize = 10,10
 savefig = $species_name.png
 
 [collinearity]
-blast = $species_name.blast
+blast = ${species_name}_${species_name}.blast
 gff1 = $species_name.new.gff
 gff2 = $species_name.new.gff
 lens1 = $species_name.lens
@@ -80,7 +80,7 @@ pairs_file = $species_name.icl
 ks_file = $species_name.ks
 
 [blockinfo]
-blast = $species_name.blast
+blast = ${species_name}_${species_name}.blast
 gff1 = $species_name.new.gff
 gff2 = $species_name.new.gff
 lens1 = $species_name.lens
